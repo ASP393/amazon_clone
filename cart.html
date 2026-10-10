@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav_bar">
+
+            <a href="main.html" class="nav_logo hover_border">
+                <img src="images/icons/amazon_logo.png" alt="amazon">
+            </a>
+
+            <div class="location hover_border">
+                <p class="small_text">Deliver to</p>
+                <div class="icon_row">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="bold_text">India</p>
+                </div>
+            </div>
+
+            <div class="nav_search">
+                <select class="search_select">
+                    <option>All</option>
+                    <option>Accessories</option>
+                    <option>Sports</option>
+                    <option>Mobile Phones</option>
+                    <option>Clothes</option>
+                </select>
+                <input type="text" class="search_text" placeholder="Search Amazon">
+                <button type="button" class="search_button">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </button>
+            </div>
+
+            <div class="language icon_row hover_border">
+                <img src="images/icons/flag.png" alt="India flag">
+                <p class="bold_text">IN</p>
+                <i class="fa-solid fa-caret-down fa-2xs"></i>
+            </div>
+
+            <div class="account hover_border">
+                <p class="small_text">Hello, sign in</p>
+                <div class="icon_row">
+                    <p class="bold_text">Account &amp; Lists</p>
+                    <i class="fa-solid fa-caret-down fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="returns hover_border">
+                <p class="small_text">Returns</p>
+                <p class="bold_text">&amp; Orders</p>
+            </div>
+
+            <a href="cart.html" class="cart hover_border">
+                <div class="cart_icon">
+                    <span class="cart_count">2</span>
+                    <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                </div>
+                <p class="bold_text">Cart</p>
+            </a>
+
+        </div>
+    </header>
+
+    <div class="cart_page">
+
+        <div class="cart_items">
+            <h2>Shopping Cart</h2>
+            <p class="deselect">Deselect all items</p>
+
+            <p class="price_line">Price</p>
+
+            <div class="item">
+                <img src="images/cart/racket.jpg" alt="Yonex badminton racquet">
+
+                <div class="item_info">
+                    <p class="item_title">Yonex Nanoray Light 18i Graphite Badminton Racquet</p>
+                    <p class="item_detail">Style Name: Racquet Only</p>
+                    <p class="item_detail">Pattern Name: Black</p>
+                    <p class="in_stock">In stock</p>
+
+                    <div class="quantity">
+                        <i class="fa-solid fa-minus"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+                <p class="item_price">₹1,699</p>
+            </div>
+
+            <div class="item">
+                <img src="images/cart/headphones.jpg" alt="boAt Rockerz 512 ANC headphones">
+
+                <div class="item_info">
+                    <p class="item_title">boAt Rockerz 512 ANC Bluetooth Headphones</p>
+                    <p class="item_detail">Colour: Cosmic Black</p>
+                    <p class="in_stock">In stock</p>
+
+                    <div class="quantity">
+                        <i class="fa-solid fa-minus"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+                <p class="item_price">₹2,659</p>
+            </div>
+        </div>
+
+        <div class="order_summary">
+            <h3>Order Summary</h3>
+
+            <div class="summary_row">
+                <span>Subtotal (2 items)</span>
+                <span>₹4,358</span>
+            </div>
+
+            <div class="summary_row">
+                <span>Delivery</span>
+                <span class="free">FREE</span>
+            </div>
+
+            <div class="summary_row total">
+                <span>Total</span>
+                <span>₹4,358</span>
+            </div>
+
+            <button type="button" class="checkout_button">Proceed to Buy</button>
+        </div>
+
+    </div>
+
+    <div class="foot_bottom">
+        <div class="foot_policies">
+            <a href="">Conditions of Use</a>
+            <a href="">Privacy Notice</a>
+            <a href="">Consumer Health Data Privacy Disclosure</a>
+            <a href="">Your Ads Privacy Choice</a>
+        </div>
+        <p class="copyright">© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+    </div>
+
+</body>
+</html>
