@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav_bar {
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav_bar a {
+    color: white;
+}
+
+.hover_border {
+    border: 2px solid transparent;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+.hover_border:hover {
+    border-color: white;
+}
+
+.small_text {
+    font-size: 12px;
+}
+
+.bold_text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.icon_row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav_logo img {
+    height: 30px;
+    display: block;
+}
+
+.nav_search {
+    flex: 1;
+    min-width: 0;
+    height: 40px;
+    margin: 0 15px;
+    display: flex;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+.nav_search:hover,
+.nav_search:focus-within {
+    border-color: orange;
+}
+
+.search_select {
+    width: 55px;
+    background-color: gainsboro;
+    color: black;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.search_text {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.search_button {
+    width: 45px;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.language img {
+    width: 20px;
+    height: 20px;
+}
+
+.account,
+.returns {
+    margin-left: 5px;
+}
+
+.cart {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    margin-left: 5px;
+}
+
+.cart_icon {
+    position: relative;
+    padding-top: 12px;
+}
+
+.cart_count {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: orange;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.foot_bottom {
+    background-color: black;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.foot_policies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+}
+
+.foot_bottom a {
+    color: gainsboro;
+    font-size: 12px;
+}
+
+.foot_bottom a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    color: gainsboro;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+    .location,
+    .language,
+    .returns {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .account,
+    .search_select {
+        display: none;
+    }
+}

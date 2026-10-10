@@ -1,0 +1,192 @@
+.panel {
+    background-color: darkslategray;
+    color: white;
+    height: 40px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.panel a {
+    color: white;
+    font-size: 14px;
+}
+
+.panel a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel_items {
+    flex: 1;
+    display: flex;
+    margin-left: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.panel_items a {
+    margin-left: 20px;
+}
+
+.panel_end {
+    font-weight: bold;
+}
+
+.hero_image {
+    background-image: url(../images/home/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero_text {
+    width: 80%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+}
+
+.hero_text p {
+    color: black;
+}
+
+.hero_text a {
+    color: darkgreen;
+}
+
+.hero_text a:hover {
+    text-decoration: underline;
+}
+
+.shop_section {
+    background-color: gainsboro;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.shop {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop h2 {
+    color: black;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.shop_image {
+    flex: 1;
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+.shop a {
+    color: darkgreen;
+    font-size: 14px;
+}
+
+.shop a:hover {
+    text-decoration: underline;
+}
+
+.foot_top {
+    display: block;
+    background-color: slategray;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 0;
+}
+
+.foot_top:hover {
+    background-color: dimgray;
+}
+
+.foot_columns {
+    background-color: darkslategray;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.foot_column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foot_column h4 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.foot_column a {
+    color: gainsboro;
+    font-size: 14px;
+}
+
+.foot_column a:hover {
+    text-decoration: underline;
+}
+
+.foot_logo {
+    background-color: darkslategray;
+    border-top: 1px solid gray;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.foot_logo img {
+    height: 30px;
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    .shop_section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .panel_end {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .shop_section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero_image {
+        height: 250px;
+    }
+}
